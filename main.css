@@ -90,13 +90,6 @@ span{
   font-family: georgia;
 }
 
-
-
-
-
-
-
-
 .column {
   flex: 50%;
   padding: 5px;
@@ -105,14 +98,12 @@ span{
 
 .row {
   display: flex;
-  
 }
 
 
 .container {
   position: relative;
   text-align: center;
-  
 }
 
 .maroon5 {
@@ -126,7 +117,6 @@ span{
 	margin:190px 50px 0px 50px;
 	box-shadow: 0px 0px 40px 40px #000000;
 	box-sizing: border-box;
-	
 }
 
 .floyd {
@@ -139,8 +129,6 @@ span{
 	color: #fff;
 	margin:190px 50px 0px 50px;
 	box-shadow: 0px 0px 40px 40px #000000;
-	
-
 	}
 .tickets {
 	position: absolute;
@@ -152,7 +140,6 @@ span{
 	color: #fff;
 	margin:190px 50px 0px 50px;
 	box-shadow: 0px 0px 40px 40px #000000;
-	
 }
 .vote {
 	position: absolute;
@@ -163,8 +150,7 @@ span{
 	margin:190px 50px 0px 50px;
 	padding: 40px;
 	color: #fff;
-	box-shadow: 0px 0px 40px 40px #000000;
-	
+	box-shadow: 0px 0px 40px 40px #000000;	
 }
 
 .column:hover{
