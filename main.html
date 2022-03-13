@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf8">
+		<title>Παρουσίαση Μουσικών Συγκροτημάτων</title>
+		<meta name="Alexios" content="Music Groups">
+	    <link rel="icon" href="3DNote.png" type="image/x-icon">
+		
+		<link rel="stylesheet" href="main.css" >
+		
+	</head>
+
+<body>
+
+	<section>    <!-- σαν το div | δημιουργεί ένα γενικό τμήμα αυτόνομο μέσα στο οποίο τοποθετούμε εικόνεςκείμενο κ.α. ,τα επεξεργαζόμαστε μαζικά -->
+		<img src="bg3.jpg" id="bg">
+		<img src="moon.png" id="moon">
+		<img src="mountain2.png" id="mountain">
+		<h1 id="titlos"> Από τους Pink Floyd στους Maroon5 </h1>
+	</section> 
+	
+	 
+	<div class="keimeno">
+		<h2>Το τέλος του μεγάλου διλήμματος </h2> 	
+		<p> <span>P</span>Pink Floyd και Maroon 5. Δύο πολύ γνωστά συγκροτήματα αλλά  διαφορετικές δεκαετίες. είναι ένα μεγάλο δίλημμα η επιλογή ανάμεσα σε αυτές τις δύο θρυλικές μπάντες όλων των εποχών. Γνωρίζουμε ότι το 2019, ο Ρότζερ Γουότερς των Pink Floyd ζητά από τους Maroon 5 να «γονατίσουν» κατά τη διάρκεια της παράστασης στο ημίχρονο του Super Bowl. Αυτή ήταν η μοναδική φορά στην ιστορία όπου τα δύο συγκροτήματα είχαν αλληλεπίδραση . Το δίλημμα μεταξύ αυτών των δύο καταπληκτικών συγκροτημάτων με καταπληκτικά τραγούδια, πολύ διαφορετικά μεταξύ τους, είναι καιρός να τελειώσει. Μπορείτε να ψηφίσετε για την αγαπημένη σας μπάντα, συμπληρώνοντας την φόρμα αξιολόγησης, όπως και να κερδίσετε ,από τον διαγωνισμό του περιοδικού, VIP εισιτήρια 2 ατόμων για την μεγαλύτερη μουσική συναυλία στην Ελλάδα! *συμμετοχή στον διαγωνισμό στην παρακάτω φόρμα * </p>
+	</div>
+	
+	
+	<div class="container">
+	
+		<div class="row">
+		  <div class="column">
+		  <a href="http://localhost/php_6minou/maroon5.php">
+			<img src="maroon5.jpg" alt="maroon5" style="width:100%">
+			<div class="maroon5"><h2> Maroon5 </h2>  <br> Μαθε τα πάντα για την ιστορία τους  </div> </a>
+		  </div>
+		  <div class="column">
+			 <a href="http://localhost/php_6minou/pinkfloyd.php ">
+			<img src="floyd.jpg" alt="pink floyd" style="width:100%"> 
+			<div class="floyd"><h2> Pink Floyd </h2> <br> Μαθε τα πάντα για την ιστορία τους  </div> </a>
+		  </div> 
+		</div>
+		
+		<div class="row">
+		  <div class="column">
+		  <a href="diagwnismos.html">
+			<img src="tickets4.png" alt="diagwnismos" style="width:100%;height:99%;">
+			<div class="tickets"> <h2> Tickets </h2>  <br> Κερδίστε δωρεάν εισιτήρια  </div> </a>
+		  </div>
+		  <div class="column">
+		  <a href="http://localhost/php_6minou/vote.html ">
+			<img src="vote4.png" alt="vote" style="width:100%">
+			<div class="vote"> <h2>Vote </h2>  <br> Βαθμολογήστε το αγαπημένο σας άλμπουμ </div> </a>
+		  </div> 
+		</div>
+	
+	</div>
+			
+	
+	
+	
+	
+	<script>
+		let bg = document.getElementById("bg");
+		let moon = document.getElementById("moon");
+		
+		let mountain = document.getElementById("mountain");
+		let titlos = document.getElementById("titlos");
+		
+		window.addEventListener('scroll', function(){
+			var value = window.scrollY;
+			
+			bg.style.top = value * 0.5 + 'px';
+			moon.style.left = value * 0.5 + 'px';
+			mountain.style.top = value * 0.15 + 'px';
+			titlos.style.top = value * 1 + 'px';
+		})	
+	</script>
+	
+	
+
+</body>
+
+</html>

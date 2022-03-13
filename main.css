@@ -1,0 +1,93 @@
+*{
+	margin:0;  /* 0 χώρο γύρω από κάθε αντικείμενο */
+	padding:0;  /* */
+/* font-family: 'Poppins', sans-serif;   */
+	box-sizing: border-box;
+}
+
+body{
+	background: #0a2a43; 
+	min-height: 2100px;   /* */
+}
+
+section{ /*σαν το div | δημιουργεί ένα γενικό τμήμα αυτόνομο (πλαίσιο) στο οποίο τοποθετούμε εικόνες, κείμενο κτλ  και το επεξεργαζόμαστε με css εύκολα*/
+	position: relative; /*ο,τι ειναι στο section εχει σχετικη θεση δηλαδη επηρεαζεται αν πηραξουμε το top,bottom,left κτλ */
+	width: 100%;  
+	height: 100vh;  /* το υψος τους ειναι το 100% του viewport size δηλαδη του ποσο μεγαλο ειναι το παραθυρο */ 
+	overflow: hidden; /* αν ο,τι βρισκεται μεσα πάει ξεχειλίσει έξω απο το section (προς τα κατω) επειδη ειναι μεγαλο , να κρυβεται */
+	display: flex;  /* τα στοιχεια που ειναι εδω μεσα φαινονται ως ενα  block-level flex container ( απαραιτητογιανα ειναι τα γραμματα στο κεντρο Χ */
+	justify-content: center; /* ευθυγραμιζει στο κεντρο τα flex containers (το κειμενο) */
+	align-items: center;  /* κεντραει (τα γραμματα) και στον X */
+}
+
+section:before{ /*δημιουργει ενα ψευτο-τμημα (element) και ταστοιχεια του εφαρμοζονται πριν αποτου σκετου section(χρειαζεται για το fade effectκατω)*/
+	content: '';
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+	background: linear-gradient(to top, #0a2a43, transparent);	
+	z-index: 10000;
+}
+
+section:after /*δημιουργει ενα ψευτο-τμημα  και ταστοιχεια του εφαρμοζονται μετα αποτου σκετου section(χρειαζεται για το μπλε χρωμα)*/
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #0a2a43;
+	z-index: 10000;
+	mix-blend-mode: color;
+}
+
+	
+section img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;  
+	pointer-events: none;
+	overflow:hidden;
+}
+
+	
+#titlos
+{
+	position: relative;
+	color: #fff;
+	font-size: 5em;
+	z-index: 4;
+}	
+
+.keimeno {
+	padding: 100px;
+	box-sizing: border-box;
+	font-family: consolas;
+}
+
+h2{	
+	font-size: 2em;
+	color: #fff;	
+		
+}
+
+p{
+	font-size: 1.2em;
+	color: #fff;
+}	
+
+	
+span{
+  float: left;
+  line-height: 85%;
+  width: .7em;
+  font-size: 400%;
+  font-family: georgia;
+}
+
+
