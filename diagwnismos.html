@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf8">
+		<title>Διαγωνισμός!</title>
+		<meta name="diagwnismos" content="diagwnismos eisitiriwn">
+		<link rel="stylesheet" href="diagwnismos.css" >
+		 <link rel="icon" href="media/3DNote.png" type="image/x-icon">
+		<script>
+			 function MyWindow() {
+				let message1 = p2003
+				let message2 = nikites
+				let contents = "<html><body style='background-color:#0a2a43; color:#fff'> <center> <h2>ΑΠΟΤΕΛΕΣΜΑΤΑ ΔΙΑΓΩΝΙΣΜΟΥ</h2>Οι " + message1 + " νικητές του διαγωνισμού είναι οι χρήστες: "  + message2 +  " <br/> <br/> Συγχαρητήρια!!! </center> </body><html>";
+				let options = "toolbar=0, status=0, scrollbars=0, resizable=0,width=600, height=500, menubar=no";
+				let newwindow = window.open("", "mywindow", options);
+					newwindow.document.write(contents);		
+			}
+		</script>				
+		
+	</head>
+	<body>
+		
+		  <div class="menu"> 
+		   <ul>
+			<li><a href="main.html">HOME</a></li>
+			<li><a href="http://localhost/php_6minou/maroon5.php"> MAROON 5</a></li>
+			<li><a href="http://localhost/php_6minou/pinkfloyd.php">PINK FLOYD</a></li>
+			<li><a href="diagwnismos.html" style="font-weight: 1000;">TICKETS CONTEST</a></li>
+			<li><a href="http://localhost/php_6minou/vote.html">VOTE</a></li>
+		   </ul>
+		  </div>
+	
+		<center>
+
+		<div class="bg_container">
+        <iframe class="bg"id="maroon5"src="/mediamaroon5.mp4?autoplay=1"   allow="autoplay"  frameborder="0" allowfullscreen >
+	    </iframe>
+        </div>
+		
+			<div class="keimeno"> 
+			   <h1>ΔΙΑΓΩΝΙΣΜΟΣ</h1>
+			   
+			   <p> Η ιστοσελίδα μας πραγματοποιεί διαγωνισμό μεταξύ των επισκεπτών με δώρο διπλό <br> 
+			   εισιτήριο για μουσική συναυλία των Maroon 5!!! Δηλώστε συμμετοχή συμπληρώνοντας το<br>
+			   πλήθος των ανθρώπων οι οποίοι συμμετέχουν στον διαγωνισμό </p>
+			 
+			   <form>
+					<label for="plithos">Συμπλήρωσε πλήθος: </label>
+					<input id="plithos" type="number"  min=1 name="plithos"><br><br>
+					<button type="button" onclick="sunarthsh()">
+					ΣΥΝΕΧΕΙΑ 
+					</button>
+				</form>
+			</div>
+		</center>
+
+	<script>
+		var nikites = [];
+		var p2003 = 0 ;
+		function sunarthsh() {
+			var plithos = document.getElementById('plithos').value;
+			if (plithos < 1) {
+					alert("Λανθασμένη είσοδος, δοκιμάστε πάλι. (Το πλήθος πρέπει να είναι μεγαλύτερο του 1") }
+			else{
+				
+				var diagwnizomenoi = [];
+	
+				for (var i = 0; i < plithos; i++) {
+					
+					diagwnizomenoi[i] = [];
+					diagwnizomenoi[i][0] = window.prompt("Δώσε ψευδώνυμο: ") ;	
+					etos = window.prompt("Δώσε έτος γέννησης του χρήστη: " + diagwnizomenoi[i][0]) ;
+					temp = parseInt(etos) ; 
+					diagwnizomenoi[i][1] = temp ;
+				}
+				
+				for (var i = 0; i < plithos; i++) {
+					if (diagwnizomenoi[i][1] == 2003) {
+						nikites[p2003] = diagwnizomenoi[i][0] ;
+						p2003+=1;
+					}
+						
+				}
+				
+				MyWindow();
+						
+			}	
+		}    
+	</script>
+
+	</body>
+</html>

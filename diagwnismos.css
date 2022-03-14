@@ -1,0 +1,109 @@
+ody{
+	background-image: linear-gradient(to right, #0a2a43 , #12766F);
+	margin: 0; 
+    font-family: 'Montserrat', sans-serif;
+	color: #fff;
+}
+
+form {
+	margin-top: 5%;
+}
+
+.menu{
+    width: 50%; 
+	height: 100px;
+}
+ ul{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+	/*The CSS justify-content property defines how the browser distributes space between and around content items along the main-axis of a flex container, and the inline axis of a grid container. */
+    align-items:  center;	
+}
+ li{
+    list-style: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+li a {
+  color: white;
+  text-decoration: none;
+  
+  padding: 0.5em 0;
+  position: relative;
+ 
+}
+
+li a:hover {
+   color: #95a5a6;
+}
+
+/*The ::before selector inserts something before the content of each selected element(s). */
+a:before, .menu a:after {
+  position: absolute;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.menu a:before {
+  bottom: 0;
+  display: block;
+  height: 3px;
+  width: 0%;
+  content: "";
+  background-color: #dc0d3a;
+}
+.menu a:hover:before, .menu .current a:before {
+  opacity: 1;
+  width: 100%;
+}
+
+
+.bg_container{ 
+    height:100%; 
+	width:100%;
+	overflow:hidden;
+ }
+ 
+.bg{ 
+    width:100%;
+	height:1200px; 	
+}
+
+.keimeno{
+	 position:absolute;
+	 width:100%;
+	 top:116px;
+	 padding:30px;
+	 color:white; 
+	 text-shadow:#000 2px 2px;
+	 background-color:black;
+}
+
+.keimeno button{  
+	font-size: 17px;
+    font-weight: 600;
+    background: linear-gradient(57deg, #00C6A7 , #1E4D92 ); 
+    border-radius: 4px 4px 4px 4px;
+    padding: 20px 35px ; 
+}
+
+.keimeno button:hover{
+    background: linear-gradient(57deg, #1E4D92,#dc0d3a);   
+	box-shadow: rgba(0, 0, 0, 0.50) 0 8px 15px;
+	transform: translateY(-2px);
+}
+ 
+
+input[type=number] {
+	width: 50px;
+	text-align: center;
+	-webkit-appearance: none;
+}
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input:focus {
+ filter: drop-shadow(0 0 0.25rem crimson);
+}

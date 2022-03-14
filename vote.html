@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf8">
+		<title>Βαθμολογία</title>
+		<meta name="vote" content="alboum voting">
+		<link rel="stylesheet" href="vote.css" >				
+		 <link rel="icon" href="media/3DNote.png" type="image/x-icon">
+		<style>
+			 form { display: table; }
+			 p { display: table-row; }
+			 label { display: table-cell; }
+			 input { display: table-cell; }
+			 border-collapse: separate; 
+			 border-spacing: 5px;
+		</style> 
+	
+	</head>
+	<body>
+		
+		  <div class="menu"> 
+		   <ul>
+			<li><a href="main.html">HOME</a></li>
+			<li><a href="http://localhost/php_6minou/maroon5.php"> MAROON 5</a></li>
+			<li><a href="http://localhost/php_6minou/pinkfloyd.php">PINK FLOYD</a></li>
+			<li><a href="diagwnismos.html">TICKETS CONTEST</a></li>
+			<li><a href="http://localhost/php_6minou/vote.html" style=" font-weight: 1000; ">VOTE</a></li>
+		   </ul>
+		  </div>
+		  <center>
+		  <div class="container">					
+		  <form  class="rating" id="vote" method="post" action="voting.php">
+		 		
+		  <center>
+		  		<h1 style=" color:white;font-family: 'Times New Roman', Times, serif;"> Βαθμολογήστε τον αγαπημένο σας δίσκο! </h1>
+				
+				<label for="albums" style=" color:white;"><b>Επιλέξτε δίσκο</b></label>
+				<select name="albums" id="albums" >
+					<optgroup label="Pink Floyd">
+						<option  id="album1" value="album1">The Dark Side of the Moon</option>
+						<option  id="album2" value="album2"> Wish You Were Here</option>
+					</optgroup>
+					<optgroup label="Maroon 5">
+						<option  id="album3" value="album3">Jordi</option>
+						<option  id="" value="album4">Overexposed</option>
+					</optgroup>
+				</select> 	
+				<hr>
+				
+				<label for="username" style=" color:white;"><b>Username:</b></label>
+				<input type="text" placeholder="Εισάγετε username" name="username" id="username"  required>
+				<hr>
+				<br>
+			   <label for="asteria"style=" color:white;"><b>Βαθμολογήστε με άριστα το 5!</b></label>
+			 <div class="rating">
+					<input id="ast5" type="radio" name="asteria" value="5"  class="radio-btn hide">
+					<label for="ast5" >☆</label>
+					<input id="ast4" type="radio" name="asteria" value="4"  class="radio-btn hide" > 
+					<label for="ast4" >☆</label>
+					<input id="ast3" type="radio" name="asteria" value="3"  class="radio-btn hide" >
+					<label for="ast3" >☆</label>
+					<input id="ast2" type="radio" name="asteria" value="2"  class="radio-btn hide" >
+					<label for="ast2" >☆</label>
+					<input id="ast1" type="radio" name="asteria" value="1"  class="radio-btn hide" >
+					<label for="ast1" >☆</label>
+	
+					
+					 <div class="clear"></div>
+				</div>
+				<br>
+		        <hr>
+				<strong style=" color:white;">Σχόλια:</strong><textarea id="sxolia" name="sxolia" rows="7" cols="30" > Θα ήθελα να τονίσω ότι: </textarea> </td> </tr>
+					<hr>
+				<input class="button2" type="reset" value="Reset/Καθαρισμός φόρμας">
+				<input id="mysubmit"  class="button" type="button" value="Αποστολή στοιχείων">
+				
+			</center>	
+		
+		</form>
+		</div>
+		</center>  
+	  
+	<script>
+	
+		function sunartisi(){
+			document.getElementById("vote").submit();
+		}	
+					
+		document.getElementById("mysubmit").addEventListener("click",function() {sunartisi(); } );			
+	</script>  
+		  
+	</body>
+</html>

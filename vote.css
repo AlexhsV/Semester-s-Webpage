@@ -1,0 +1,188 @@
+body{
+	background-image: linear-gradient(to right, #0a2a43 , #12766F);
+	margin: 0; 
+    font-family: 'Montserrat', sans-serif;
+	color: #fff;
+}
+.menu{
+    width: 50%; 
+	height: 100px;
+}
+ ul{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items:  center;	
+}
+ li{
+    list-style: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+li a {
+  color: white;
+  text-decoration: none;
+  
+  padding: 0.5em 0;
+  position: relative;
+ 
+}
+
+li a:hover {
+   color: #95a5a6;
+}
+a:before,
+.menu a:after {
+  position: absolute;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.menu a:before {
+  bottom: 0;
+  display: block;
+  height: 3px;
+  width: 0%;
+  content: "";
+  background-color: #dc0d3a;
+}
+.menu a:hover:before,	 /*ενεργοποιειται μια λειτουργία καθώς ο χρηστης περναει με το ποντικι πανω απο το στοιχειο δηλαδη εμφανιζει κοκκινη γραμμη*/
+.menu .current a:before {
+  opacity: 1;
+  width: 100%;
+}
+
+
+.rating{
+	width: 100%;
+      padding-left: 100px;
+	  padding-right:100px;
+	  padding-top:30px;
+	  padding-bottom:30px;
+      border-radius: 6px;
+     
+      box-shadow: 0 0 8px black; 
+	  color:black;
+	  
+	  
+	   background: rgba(255,255,255,0.1);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+  border: 1px solid rgba(255,255,255,0.25);
+  border-right: 1px solid rgba(255,255,255,0.1);
+  border-left: 1px solid rgba(255,255,255,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  backdrop-filter: blur(25px);
+	  
+}
+
+
+#username,#albums,#sxolia{
+	  background: rgba(255,255,255,0.1);
+    box-shadow: 0 25px 45px rgba(0,0,0,0.1);
+  border: 1px solid rgba(255,255,255,0.25);
+  border-right: 1px solid rgba(255,255,255,0.1);
+  border-left: 1px solid rgba(255,255,255,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  backdrop-filter: blur(25px);
+ 
+	
+}
+
+::placeholder {
+  color: black;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: black;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: black;
+}
+
+
+   .hide {
+        display: none;
+      }
+
+      .clear {
+        float: none;
+        clear: both;
+      }
+
+      .rating {
+          width: 90px;
+          unicode-bidi: bidi-override;
+    
+          text-align: center;
+          position: relative;
+      }
+
+      .rating > label {
+          float: right;
+          display: inline;
+          padding: 0;
+          margin: 0;
+          position: relative;
+          width: 1.1em;
+          cursor: pointer;
+          color: #000;
+      }
+
+      .rating > label:hover,
+      .rating > label:hover ~ label,
+      .rating > input.radio-btn:checked ~ label {
+          color: transparent;
+      }
+
+      .rating > label:hover:before,
+      .rating > label:hover ~ label:before,
+      .rating > input.radio-btn:checked ~ label:before,
+      .rating > input.radio-btn:checked ~ label:before {
+          content: "\2605";
+          position: absolute;
+          left: 0;
+          color: #FFD700;
+		  
+      }
+	  
+.button {
+  color: black;
+  border: 2px solid rgb(216, 2, 134);
+  border-radius: 0px;
+  padding: 15px 30px;
+  display: inline-block;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 yellow;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+.button:hover {
+  box-shadow: inset 0 0 0 50px #D80286;
+}
+
+.button2 {
+  color: black;
+  border: 2px solid rgb(216, 2, 134);
+  border-radius: 0px;
+  padding: 10px 23px;
+  display: inline-block;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 red;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+.button2:hover {
+  box-shadow: inset 0 0 0 50px #D80286;
+}
