@@ -4,7 +4,7 @@
 		<meta charset="utf8">
 		<title>Maroon 5</title>
 		<meta name="Maroon5" content="maroon5">
-		<link rel="icon" href="favMar.png" type="image/x-icon">
+		<link rel="icon" href="media/favMar.png" type="image/x-icon">
 		<link rel="stylesheet" href="maroon5.css" >
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	</head>
@@ -13,10 +13,10 @@
 	    <div class="menu"> 
 		   <ul>
 		      <li><a href="main.html">HOME</a></li>
-			  <li><a href="http://localhost/php_6minou/maroon5.php"style=" font-weight: 1000;"> MAROON 5</a></li>
-			  <li><a href="http://localhost/php_6minou/pinkfloyd.php">PINK FLOYD</a></li>
+			  <li><a href="http://localhost/php/maroon5.php"style=" font-weight: 1000;"> MAROON 5</a></li>
+			  <li><a href="http://localhost/php/pinkfloyd.php">PINK FLOYD</a></li>
 			  <li><a href="diagwnismos.html">TICKETS CONTEST</a></li>
-			  <li><a href="http://localhost/php_6minou/vote.html">VOTE</a></li>
+			  <li><a href="http://localhost/php/vote.html">VOTE</a></li>
 		   </ul>
 		</div>
 		<center>
@@ -43,12 +43,12 @@
 			  	 <td></td>
 			     <td class="info1"> 
 				    <div class="img_wrap">
-			           <img class="alb" src="maroonalb1.png"  alt="alb1">
+			           <img class="alb" src="media/maroonalb1.png"  alt="alb1">
 					   									
 						<?php
-							/* http://localhost/php_6minou/maroon5.php  */
-							/* http://localhost/php_6minou/voting.html  */
-							/* http://localhost/php_6minou/pinkfloyd.php  */
+							/* http://localhost/php/maroon5.php  */
+							/* http://localhost/php/voting.html  */
+							/* http://localhost/php/pinkfloyd.php  */
 							$servername = "localhost";
 							$username = "root"; 
 							$password = ""; 
