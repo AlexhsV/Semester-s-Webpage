@@ -5,41 +5,6 @@ Each visitor can choose and vote with stars one of the four albums mentioned, co
 =====================================================================================
 
 
+Internet Technologies - General 6-month project Pronunciation: Implement music artist/group presentation website. A website of this kind should contain, at least, the following websites: Main page, on which there will be a list/menu of options to go to the other web pages of the website. On all pages there will be links/buttons on which the visitor can go to the other web pages. There will be webpage(s) where information about at least one musician/band and at least two albums for each will be presented. The number of stars preferred by the audience will be displayed under the images/titles of each album. One of the featured bands presents a new album and is interested in the opinion of its audience. To record the audience's preference there will be a page/form for rating albums/music tracks. The page will store in a database the fields: album name, release date, nickname of the visitor who fills in the review/rating (Review by), the text of the review/comments and the rating (from one to 5 stars). The magazine is holding a competition among visitors with a prize of a double ticket for a music concert. Build a website where exclusively using javascript (and html, css) it collects the number of people who participate in the contest, their nickname, their answers to the question "what is your year of birth?" Consider that the user types in the year with 4 digits. When the user selects the appropriate button calculate and print in a new window how many people were born in 2003 and print their nicknames as they won the tickets. The information displayed on any website would use at least, images, tables, lists, enriched text (use css rules), links to external and internal websites, display of youtube videos and anything else that would make the application more believable. By using css the first letter of a paragraph will be capitalized (like in the image)
 
-
-Τεχνολογίες Διαδικτύου – Γενική εργασία 6μήνου
-Εκφώνηση: Υλοποιήστε τον ιστοτόπο παρουσίασης μουσικών
-καλλιτεχνών/συγκροτημάτων.
-Ένας ιστοτόπος αυτού του είδους θα πρέπει να περιέχει, τουλάχιστον, τις
-παρακάτω ιστοσελίδες:
-Κεντρική σελίδα, στην οποία θα υπάρχει λίστα/μενού επιλογών για
-μετάβαση στις άλλες ιστοσελίδες του ιστοχώρου. Σε όλες τις σελίδες θα
-υπάρχουν σύνδεσμοί/κουμπιά με τα οποία ο επισκέπτης θα μπορεί να
-μεταβαίνει στις υπόλοιπες ιστοσελίδες.
-Θα υπάρχει ιστοσελίδα/ιστοσελίδες όπου θα παρουσιάζονται πληροφορίες
-για τουλάχιστον ένα μουσικό/συγκρότημα και τουλάχιστον δύο δίσκους για
-το καθένα. Κάτω από τις εικόνες/ τίτλους κάθε δίσκου θα εμφανίζεται ο
-αριθμός των αστεριών προτίμησης του ακροατηρίου.
-Ένα από τα παρουσιαζόμενα συγκροτήματα παρουσιάζει ένα νέο δίσκο και
-ενδιαφέρεται για την γνώμη του κοινού του. Για την καταγραφή της
-προτίμησης του κοινού θα υπάρχει σελίδα/φόρμα αξιολόγησης
-δίσκων/μουσικών κομματιών. Η σελίδα θα αποθηκεύει σε βάση τα πεδία:
-όνομα δίσκου, χρονολογία κυκλοφορίας, ψευδώνυμο επισκέπτη ο οποίος
-συμπληρώνει την κριτική/ αξιολόγηση (Review by), το κείμενο της
-κριτικής/σχόλια και το βαθμό αξιολόγηση (από ένα έως 5 αστέρια).
-Το περιοδικό πραγματοποιεί διαγωνισμό μεταξύ των επισκεπτών με δώρο
-διπλό εισιτήριο για μουσική συναυλία. Να φτιαχτεί ιστοσελίδα όπου
-αποκλειστικά με τη χρήση javascript (και html, css) συλλέγει το πλήθος
-των ανθρώπων οι οποίοι συμμετέχουν στον διαγωνισμό, το ψευδώνυμο
-τους, τις απαντήσεις τους στην ερώτηση «ποιο το έτος γέννησης σας;» Να
-θεωρήσετε πως ο χρήστης πληκτρολογεί το έτος με 4 ψηφία. Όταν ο
-χρήστης επιλέγει το κατάλληλο κουμπί να υπολογιστεί και να εκτυπωθεί σε
-νέο παράθυρο πόσοι έχουν γεννηθεί το 2003 και να εκτυπώνει τα
-ψευδώνυμα τους, καθώς αυτοί κέρδισαν τα εισιτήρια.
-Οι πληροφορίες που θα προβάλλονται σε οποιαδήποτε ιστοσελίδα θα
-χρησιμοποιούν τουλάχιστον, εικόνες, πίνακες, λίστες, εμπλουτισμένο
-κείμενο (χρήση κανόνων css), συνδέσμους προς εξωτερικές και εσωτερικές
-ιστοσελίδες, προβολή video από youtube και ο,τιδήποτε άλλο θα έκανε την
-εφαρμογή περισσότερο αληθοφανής. Με τη χρήση css το πρώτο γράμμα
-μια παραγράφου θα είναι κεφαλαίο (όπως της εικόνας)
 
